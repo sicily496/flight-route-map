@@ -46,7 +46,7 @@
           .attr('d', path);
 
         // Load airport data
-        d3.csv('https://github.com/sicily496/flight-route-map/static/airports_info_final.csv').then(data => {
+        d3.csv("/static/airports_info_final.csv').then(data => {
           airportData = data; // Store airport data in the global variable
           
           // Load routes data
