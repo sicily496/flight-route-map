@@ -50,7 +50,7 @@
           airportData = data; // Store airport data in the global variable
           
           // Load routes data
-          d3.csv('/src/components/data/route_final.csv').then(routesData => {
+          d3.csv('https://github.com/sicily496/flight-route-map/src/components/data/route_final.csv').then(routesData => {
             // Filter routes data based on 'number_airport' column
             const filteredRoutesData = routesData.filter(route => route.number_airport > 150);
 
